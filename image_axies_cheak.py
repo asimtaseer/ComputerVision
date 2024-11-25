@@ -33,7 +33,7 @@ def crop_image(image, values):
     cv.destroyWindow('image')
     cv.imshow('Cropped Image', out_image)
 
-    cv.imwrite('images_cropped.png', out_image)
+   
     print("Image cropped and saved successfully.")
 
 image = cv.imread('resources/document.jpg', 1)
