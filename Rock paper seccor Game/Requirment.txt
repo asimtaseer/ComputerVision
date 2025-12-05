@@ -1,0 +1,7 @@
+Require Libraries:
+       >openCV
+       >cvzone
+       >time
+
+I am Working on this.
+The resources are not avilable in here write now.

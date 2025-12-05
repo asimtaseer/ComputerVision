@@ -1,0 +1,17 @@
+Libraries:
+        >openCV
+        >numpy
+        >OS
+        >CSV
+        >Datetime
+
+Using HSV image segmentation we detect the barren land 
+
+Code Working:
+It is HSV image segementation
+
+1.  Calculate All the pixels in Frame
+2.  Calculate Barren pixels in Frame
+3.  Calculate Green Land pixels in Frame
+4.  Show you Square around barren pixels
+5.  It show you percentage of Barren,Green land Water in frame
