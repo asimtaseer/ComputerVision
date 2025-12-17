@@ -1,0 +1,7 @@
+Library:
+     >openCV
+
+
+1. Give the path where you copy dataset 
+
+2. Give the path where you want to Save Images
