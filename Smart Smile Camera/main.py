@@ -7,19 +7,18 @@ faceCascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 )
 smileCascade = cv2.CascadeClassifier(
-    cv2.data.haarcascades + "haarcascade_smile.xml"
-)
+    cv2.data.haarcascades + "haarcascade_smile.xml")
 
 # SAVE FOLDER
 save_dir = r"D:\CS&IT\python codes\capture"
 os.makedirs(save_dir, exist_ok=True)
 
-cnt = 500  
+cnt = 500 
 
 while True:
     success, img = video.read()
     if not success:
-        print("Camera read failed")
+        print("❌ Camera read failed")
         break
 
     grayImg = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -41,10 +40,10 @@ while True:
             saved = cv2.imwrite(path, img)
 
             if saved:
-                print("Image saved at:", path)
+                print("✅ Image saved at:", path)
                 cnt += 1
             else:
-                print("Image NOT saved")
+                print("❌ Image NOT saved")
 
             if cnt >= 503:
                 break
